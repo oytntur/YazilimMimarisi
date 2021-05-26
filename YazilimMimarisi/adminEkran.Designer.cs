@@ -42,7 +42,7 @@ namespace YazilimMimarisi
             this.transListView.HideSelection = false;
             this.transListView.Location = new System.Drawing.Point(12, 12);
             this.transListView.Name = "transListView";
-            this.transListView.Size = new System.Drawing.Size(625, 476);
+            this.transListView.Size = new System.Drawing.Size(401, 363);
             this.transListView.TabIndex = 2;
             this.transListView.UseCompatibleStateImageBehavior = false;
             this.transListView.View = System.Windows.Forms.View.Details;

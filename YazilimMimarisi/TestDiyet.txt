@@ -1,0 +1,5 @@
+<Test Diyeti>
+#Pazartesi
+*Kahvaltı:1 tane Yumurta,2 tane siyah zeytin,2 ince dilim ekmek
+*Öğlen Yemeği:Pilav,Yeşil Çay
+*Akşam Yemeği:Orman Kebabı,Patlıcan Yemeği
