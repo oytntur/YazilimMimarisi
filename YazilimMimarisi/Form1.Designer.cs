@@ -62,6 +62,7 @@ namespace YazilimMimarisi
             this.btnLogin.ActiveForecolor = System.Drawing.Color.White;
             this.btnLogin.ActiveLineColor = System.Drawing.Color.SeaGreen;
             this.btnLogin.BackColor = System.Drawing.SystemColors.Control;
+            this.btnLogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLogin.BackgroundImage")));
             this.btnLogin.ButtonText = "Sign In";
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -133,7 +134,7 @@ namespace YazilimMimarisi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(853, 624);
+            this.ClientSize = new System.Drawing.Size(842, 690);
             this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtBoxPass);

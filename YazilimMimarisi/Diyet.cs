@@ -1,13 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace YazilimMimarisi
 {
-    class Diyet
+    public class Diyet : IONesneEkle
     {
+       
+        public int ID { get; set; }
         public string name { get; set; }
         
         public Day Pazartesi { get; set; }
@@ -18,8 +22,29 @@ namespace YazilimMimarisi
         public Day Cumartesi { get; set; }
         public Day Pazar { get; set; }
 
+        public void nesneEkle()
+        {
+            this.diyetEkle();
+        }
+        private void diyetEkle()
+        {
+            List<Diyet> LoadJson()
+            {
+                using (StreamReader r = new StreamReader(@"test.json"))
+                {
+                    string json = r.ReadToEnd();
+                    List<Diyet> items = JsonConvert.DeserializeObject<List<Diyet>>(json);
+                    return items;
+                }
+            }
+            List<Diyet> liste = LoadJson();
+            liste.Add(this);
+            string strResultJson = JsonConvert.SerializeObject(liste);
+            File.WriteAllText(@"test.json", strResultJson);
+        }
     }
-    class Day
+    
+    public class Day
     {
         
         public string kahvalti { get; set; }

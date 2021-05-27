@@ -29,166 +29,283 @@ namespace YazilimMimarisi
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.bunifuMetroTextbox1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.bunifuMetroTextbox2 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.bunifuMetroTextbox3 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.bunifuMetroTextbox4 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.panelSideMenu = new System.Windows.Forms.Panel();
+            this.panelLogo = new System.Windows.Forms.Panel();
+            this.btnDiyet = new System.Windows.Forms.Button();
+            this.diyetSubPanel = new System.Windows.Forms.Panel();
+            this.btnMon = new System.Windows.Forms.Button();
+            this.btnTue = new System.Windows.Forms.Button();
+            this.btnWed = new System.Windows.Forms.Button();
+            this.btnThu = new System.Windows.Forms.Button();
+            this.btnFri = new System.Windows.Forms.Button();
+            this.btnSat = new System.Windows.Forms.Button();
+            this.btnSun = new System.Windows.Forms.Button();
+            this.btnRapor = new System.Windows.Forms.Button();
+            this.btnChangeDiet = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelSideMenu.SuspendLayout();
+            this.diyetSubPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // panelSideMenu
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(36, 38);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Diyet Adı:";
+            this.panelSideMenu.AutoScroll = true;
+            this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.panelSideMenu.Controls.Add(this.btnExit);
+            this.panelSideMenu.Controls.Add(this.btnChangeDiet);
+            this.panelSideMenu.Controls.Add(this.btnRapor);
+            this.panelSideMenu.Controls.Add(this.diyetSubPanel);
+            this.panelSideMenu.Controls.Add(this.btnDiyet);
+            this.panelSideMenu.Controls.Add(this.panelLogo);
+            this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelSideMenu.Name = "panelSideMenu";
+            this.panelSideMenu.Size = new System.Drawing.Size(291, 737);
+            this.panelSideMenu.TabIndex = 0;
             // 
-            // bunifuMetroTextbox1
+            // panelLogo
             // 
-            this.bunifuMetroTextbox1.BorderColorFocused = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox1.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox1.BorderThickness = 3;
-            this.bunifuMetroTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox1.isPassword = false;
-            this.bunifuMetroTextbox1.Location = new System.Drawing.Point(127, 13);
-            this.bunifuMetroTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox1.Name = "bunifuMetroTextbox1";
-            this.bunifuMetroTextbox1.Size = new System.Drawing.Size(370, 44);
-            this.bunifuMetroTextbox1.TabIndex = 1;
-            this.bunifuMetroTextbox1.Text = "bunifuMetroTextbox1";
-            this.bunifuMetroTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(291, 100);
+            this.panelLogo.TabIndex = 0;
             // 
-            // label2
+            // btnDiyet
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(199, 92);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 17);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Diyet Adı:";
+            this.btnDiyet.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDiyet.FlatAppearance.BorderSize = 0;
+            this.btnDiyet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDiyet.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnDiyet.Location = new System.Drawing.Point(0, 100);
+            this.btnDiyet.Name = "btnDiyet";
+            this.btnDiyet.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnDiyet.Size = new System.Drawing.Size(291, 45);
+            this.btnDiyet.TabIndex = 1;
+            this.btnDiyet.Text = "Diyet Bilgisi";
+            this.btnDiyet.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDiyet.UseVisualStyleBackColor = true;
+            this.btnDiyet.Click += new System.EventHandler(this.btnDiyet_Click);
             // 
-            // label3
+            // diyetSubPanel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(36, 129);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 17);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Diyet Adı:";
+            this.diyetSubPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.diyetSubPanel.Controls.Add(this.btnSun);
+            this.diyetSubPanel.Controls.Add(this.btnSat);
+            this.diyetSubPanel.Controls.Add(this.btnFri);
+            this.diyetSubPanel.Controls.Add(this.btnThu);
+            this.diyetSubPanel.Controls.Add(this.btnWed);
+            this.diyetSubPanel.Controls.Add(this.btnTue);
+            this.diyetSubPanel.Controls.Add(this.btnMon);
+            this.diyetSubPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.diyetSubPanel.Location = new System.Drawing.Point(0, 145);
+            this.diyetSubPanel.Name = "diyetSubPanel";
+            this.diyetSubPanel.Size = new System.Drawing.Size(291, 286);
+            this.diyetSubPanel.TabIndex = 2;
             // 
-            // label4
+            // btnMon
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(36, 166);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 17);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Diyet Adı:";
+            this.btnMon.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnMon.FlatAppearance.BorderSize = 0;
+            this.btnMon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMon.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnMon.Location = new System.Drawing.Point(0, 0);
+            this.btnMon.Name = "btnMon";
+            this.btnMon.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnMon.Size = new System.Drawing.Size(291, 40);
+            this.btnMon.TabIndex = 0;
+            this.btnMon.Text = "Pazartesi";
+            this.btnMon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMon.UseVisualStyleBackColor = true;
+            this.btnMon.Click += new System.EventHandler(this.btnMon_Click);
             // 
-            // label5
+            // btnTue
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(343, 423);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 17);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Diyet Adı:";
+            this.btnTue.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTue.FlatAppearance.BorderSize = 0;
+            this.btnTue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTue.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnTue.Location = new System.Drawing.Point(0, 40);
+            this.btnTue.Name = "btnTue";
+            this.btnTue.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnTue.Size = new System.Drawing.Size(291, 40);
+            this.btnTue.TabIndex = 1;
+            this.btnTue.Text = "Salı";
+            this.btnTue.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTue.UseVisualStyleBackColor = true;
+            this.btnTue.Click += new System.EventHandler(this.btnTue_Click);
             // 
-            // bunifuMetroTextbox2
+            // btnWed
             // 
-            this.bunifuMetroTextbox2.BorderColorFocused = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox2.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox2.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox2.BorderThickness = 3;
-            this.bunifuMetroTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox2.isPassword = false;
-            this.bunifuMetroTextbox2.Location = new System.Drawing.Point(111, 113);
-            this.bunifuMetroTextbox2.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox2.Name = "bunifuMetroTextbox2";
-            this.bunifuMetroTextbox2.Size = new System.Drawing.Size(370, 44);
-            this.bunifuMetroTextbox2.TabIndex = 6;
-            this.bunifuMetroTextbox2.Text = "bunifuMetroTextbox2";
-            this.bunifuMetroTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnWed.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnWed.FlatAppearance.BorderSize = 0;
+            this.btnWed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnWed.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnWed.Location = new System.Drawing.Point(0, 80);
+            this.btnWed.Name = "btnWed";
+            this.btnWed.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnWed.Size = new System.Drawing.Size(291, 40);
+            this.btnWed.TabIndex = 2;
+            this.btnWed.Text = "Çarşamba";
+            this.btnWed.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnWed.UseVisualStyleBackColor = true;
+            this.btnWed.Click += new System.EventHandler(this.btnWed_Click);
             // 
-            // bunifuMetroTextbox3
+            // btnThu
             // 
-            this.bunifuMetroTextbox3.BorderColorFocused = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox3.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox3.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox3.BorderThickness = 3;
-            this.bunifuMetroTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox3.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox3.isPassword = false;
-            this.bunifuMetroTextbox3.Location = new System.Drawing.Point(111, 152);
-            this.bunifuMetroTextbox3.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox3.Name = "bunifuMetroTextbox3";
-            this.bunifuMetroTextbox3.Size = new System.Drawing.Size(370, 44);
-            this.bunifuMetroTextbox3.TabIndex = 7;
-            this.bunifuMetroTextbox3.Text = "bunifuMetroTextbox3";
-            this.bunifuMetroTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnThu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnThu.FlatAppearance.BorderSize = 0;
+            this.btnThu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThu.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnThu.Location = new System.Drawing.Point(0, 120);
+            this.btnThu.Name = "btnThu";
+            this.btnThu.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnThu.Size = new System.Drawing.Size(291, 40);
+            this.btnThu.TabIndex = 3;
+            this.btnThu.Text = "Perşembe";
+            this.btnThu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThu.UseVisualStyleBackColor = true;
+            this.btnThu.Click += new System.EventHandler(this.btnThu_Click);
             // 
-            // bunifuMetroTextbox4
+            // btnFri
             // 
-            this.bunifuMetroTextbox4.BorderColorFocused = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox4.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox4.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.bunifuMetroTextbox4.BorderThickness = 3;
-            this.bunifuMetroTextbox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox4.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox4.isPassword = false;
-            this.bunifuMetroTextbox4.Location = new System.Drawing.Point(111, 194);
-            this.bunifuMetroTextbox4.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox4.Name = "bunifuMetroTextbox4";
-            this.bunifuMetroTextbox4.Size = new System.Drawing.Size(370, 44);
-            this.bunifuMetroTextbox4.TabIndex = 8;
-            this.bunifuMetroTextbox4.Text = "bunifuMetroTextbox4";
-            this.bunifuMetroTextbox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnFri.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnFri.FlatAppearance.BorderSize = 0;
+            this.btnFri.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFri.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnFri.Location = new System.Drawing.Point(0, 160);
+            this.btnFri.Name = "btnFri";
+            this.btnFri.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnFri.Size = new System.Drawing.Size(291, 40);
+            this.btnFri.TabIndex = 4;
+            this.btnFri.Text = "Cuma";
+            this.btnFri.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFri.UseVisualStyleBackColor = true;
+            this.btnFri.Click += new System.EventHandler(this.btnFri_Click);
+            // 
+            // btnSat
+            // 
+            this.btnSat.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSat.FlatAppearance.BorderSize = 0;
+            this.btnSat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSat.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnSat.Location = new System.Drawing.Point(0, 200);
+            this.btnSat.Name = "btnSat";
+            this.btnSat.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnSat.Size = new System.Drawing.Size(291, 40);
+            this.btnSat.TabIndex = 5;
+            this.btnSat.Text = "Cumartesi";
+            this.btnSat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSat.UseVisualStyleBackColor = true;
+            this.btnSat.Click += new System.EventHandler(this.btnSat_Click);
+            // 
+            // btnSun
+            // 
+            this.btnSun.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSun.FlatAppearance.BorderSize = 0;
+            this.btnSun.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSun.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnSun.Location = new System.Drawing.Point(0, 240);
+            this.btnSun.Name = "btnSun";
+            this.btnSun.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnSun.Size = new System.Drawing.Size(291, 40);
+            this.btnSun.TabIndex = 6;
+            this.btnSun.Text = "Pazar";
+            this.btnSun.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSun.UseVisualStyleBackColor = true;
+            this.btnSun.Click += new System.EventHandler(this.btnSun_Click);
+            // 
+            // btnRapor
+            // 
+            this.btnRapor.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRapor.FlatAppearance.BorderSize = 0;
+            this.btnRapor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRapor.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnRapor.Location = new System.Drawing.Point(0, 431);
+            this.btnRapor.Name = "btnRapor";
+            this.btnRapor.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnRapor.Size = new System.Drawing.Size(291, 45);
+            this.btnRapor.TabIndex = 3;
+            this.btnRapor.Text = "Rapor";
+            this.btnRapor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRapor.UseVisualStyleBackColor = true;
+            this.btnRapor.Click += new System.EventHandler(this.btnRapor_Click);
+            // 
+            // btnChangeDiet
+            // 
+            this.btnChangeDiet.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnChangeDiet.FlatAppearance.BorderSize = 0;
+            this.btnChangeDiet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChangeDiet.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnChangeDiet.Location = new System.Drawing.Point(0, 476);
+            this.btnChangeDiet.Name = "btnChangeDiet";
+            this.btnChangeDiet.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnChangeDiet.Size = new System.Drawing.Size(291, 45);
+            this.btnChangeDiet.TabIndex = 4;
+            this.btnChangeDiet.Text = "Diyet Değişikliği";
+            this.btnChangeDiet.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnChangeDiet.UseVisualStyleBackColor = true;
+            // 
+            // btnExit
+            // 
+            this.btnExit.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnExit.Location = new System.Drawing.Point(0, 521);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnExit.Size = new System.Drawing.Size(291, 45);
+            this.btnExit.TabIndex = 5;
+            this.btnExit.Text = "Çıkış";
+            this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.panel1.Location = new System.Drawing.Point(288, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(860, 737);
+            this.panel1.TabIndex = 1;
             // 
             // diyetForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(927, 707);
-            this.Controls.Add(this.bunifuMetroTextbox4);
-            this.Controls.Add(this.bunifuMetroTextbox3);
-            this.Controls.Add(this.bunifuMetroTextbox2);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.bunifuMetroTextbox1);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(1148, 737);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelSideMenu);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MinimumSize = new System.Drawing.Size(950, 600);
             this.Name = "diyetForm";
             this.Text = "diyetForm";
             this.Load += new System.EventHandler(this.diyetForm_Load);
+            this.panelSideMenu.ResumeLayout(false);
+            this.diyetSubPanel.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox2;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox3;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox4;
+        private System.Windows.Forms.Panel panelSideMenu;
+        private System.Windows.Forms.Panel diyetSubPanel;
+        private System.Windows.Forms.Button btnSun;
+        private System.Windows.Forms.Button btnSat;
+        private System.Windows.Forms.Button btnFri;
+        private System.Windows.Forms.Button btnThu;
+        private System.Windows.Forms.Button btnWed;
+        private System.Windows.Forms.Button btnTue;
+        private System.Windows.Forms.Button btnMon;
+        private System.Windows.Forms.Button btnDiyet;
+        private System.Windows.Forms.Panel panelLogo;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnChangeDiet;
+        private System.Windows.Forms.Button btnRapor;
+        private System.Windows.Forms.Panel panel1;
     }
 }
