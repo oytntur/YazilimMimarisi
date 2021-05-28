@@ -9,6 +9,7 @@ namespace YazilimMimarisi
     public class eklemeFactory
     {
         public Diyet Diet { get; set; }
+        public Hastalik Hastalik { get; set; }
         public IONesneEkle nesneEkle(string nesneAdi)
         {
             if (nesneAdi == "Diyet")
@@ -17,7 +18,7 @@ namespace YazilimMimarisi
             }
             else if (nesneAdi == "Hastalik")
             {
-                return null;
+                return Hastalik;
             }
             else
                 return null;

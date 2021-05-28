@@ -177,5 +177,10 @@ namespace YazilimMimarisi
             IONesneEkle ekle = fabrika.nesneEkle("Diyet");
             ekle.nesneEkle();
         }
+
+        private void btnAddHastalik_Click(object sender, EventArgs e)
+        {
+            openChildForm(new hastalikEkle());
+        }
     }
 }

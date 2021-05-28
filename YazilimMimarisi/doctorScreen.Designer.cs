@@ -41,7 +41,7 @@ namespace YazilimMimarisi
             this.btnTue = new System.Windows.Forms.Button();
             this.btnMon = new System.Windows.Forms.Button();
             this.btnChangeDiet = new System.Windows.Forms.Button();
-            this.btnRapor = new System.Windows.Forms.Button();
+            this.btnAddHastalik = new System.Windows.Forms.Button();
             this.btnHastalar = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -56,7 +56,7 @@ namespace YazilimMimarisi
             this.panelSideMenu.Controls.Add(this.button1);
             this.panelSideMenu.Controls.Add(this.diyetaddSubPanel);
             this.panelSideMenu.Controls.Add(this.btnChangeDiet);
-            this.panelSideMenu.Controls.Add(this.btnRapor);
+            this.panelSideMenu.Controls.Add(this.btnAddHastalik);
             this.panelSideMenu.Controls.Add(this.btnHastalar);
             this.panelSideMenu.Controls.Add(this.panelLogo);
             this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -244,21 +244,22 @@ namespace YazilimMimarisi
             this.btnChangeDiet.UseVisualStyleBackColor = true;
             this.btnChangeDiet.Click += new System.EventHandler(this.btnChangeDiet_Click);
             // 
-            // btnRapor
+            // btnAddHastalik
             // 
-            this.btnRapor.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnRapor.FlatAppearance.BorderSize = 0;
-            this.btnRapor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRapor.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnRapor.Location = new System.Drawing.Point(0, 181);
-            this.btnRapor.Margin = new System.Windows.Forms.Padding(4);
-            this.btnRapor.Name = "btnRapor";
-            this.btnRapor.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.btnRapor.Size = new System.Drawing.Size(364, 56);
-            this.btnRapor.TabIndex = 3;
-            this.btnRapor.Text = "Hastalık Ekle";
-            this.btnRapor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRapor.UseVisualStyleBackColor = true;
+            this.btnAddHastalik.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAddHastalik.FlatAppearance.BorderSize = 0;
+            this.btnAddHastalik.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddHastalik.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAddHastalik.Location = new System.Drawing.Point(0, 181);
+            this.btnAddHastalik.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAddHastalik.Name = "btnAddHastalik";
+            this.btnAddHastalik.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.btnAddHastalik.Size = new System.Drawing.Size(364, 56);
+            this.btnAddHastalik.TabIndex = 3;
+            this.btnAddHastalik.Text = "Hastalık Ekle";
+            this.btnAddHastalik.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddHastalik.UseVisualStyleBackColor = true;
+            this.btnAddHastalik.Click += new System.EventHandler(this.btnAddHastalik_Click);
             // 
             // btnHastalar
             // 
@@ -314,7 +315,7 @@ namespace YazilimMimarisi
 
         private System.Windows.Forms.Panel panelSideMenu;
         private System.Windows.Forms.Button btnChangeDiet;
-        private System.Windows.Forms.Button btnRapor;
+        private System.Windows.Forms.Button btnAddHastalik;
         private System.Windows.Forms.Button btnHastalar;
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.Button button1;
