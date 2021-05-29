@@ -59,5 +59,11 @@ namespace YazilimMimarisi
             }
             con.Close();
         }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            kayitForm kayit = new kayitForm();
+            kayit.ShowDialog();
+        }
     }
 }

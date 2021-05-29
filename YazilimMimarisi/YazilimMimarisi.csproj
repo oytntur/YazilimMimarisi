@@ -105,6 +105,12 @@
       <DependentUpon>GirisEkran.cs</DependentUpon>
     </Compile>
     <Compile Include="Classlar\Hasta.cs" />
+    <Compile Include="hastaEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hastaEkle.Designer.cs">
+      <DependentUpon>hastaEkle.cs</DependentUpon>
+    </Compile>
     <Compile Include="HastalarScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +130,12 @@
     <Compile Include="Classlar\jsonLogger.cs" />
     <Compile Include="Classlar\LoggerAdapter.cs" />
     <Compile Include="Classlar\Program.cs" />
+    <Compile Include="kayitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kayitForm.Designer.cs">
+      <DependentUpon>kayitForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classlar\Rapor.cs" />
     <Compile Include="raporForm.cs">
@@ -153,11 +165,17 @@
     <EmbeddedResource Include="GirisEkran.resx">
       <DependentUpon>GirisEkran.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="hastaEkle.resx">
+      <DependentUpon>hastaEkle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HastalarScreen.resx">
       <DependentUpon>HastalarScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="hastalikEkle.resx">
       <DependentUpon>hastalikEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kayitForm.resx">
+      <DependentUpon>kayitForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

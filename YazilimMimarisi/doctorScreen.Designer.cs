@@ -45,6 +45,7 @@ namespace YazilimMimarisi
             this.btnHastalar = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
             this.diyetaddSubPanel.SuspendLayout();
             this.SuspendLayout();
@@ -54,6 +55,7 @@ namespace YazilimMimarisi
             this.panelSideMenu.AutoScroll = true;
             this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.panelSideMenu.Controls.Add(this.button1);
+            this.panelSideMenu.Controls.Add(this.button3);
             this.panelSideMenu.Controls.Add(this.diyetaddSubPanel);
             this.panelSideMenu.Controls.Add(this.btnChangeDiet);
             this.panelSideMenu.Controls.Add(this.btnAddHastalik);
@@ -72,7 +74,7 @@ namespace YazilimMimarisi
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(0, 624);
+            this.button1.Location = new System.Drawing.Point(0, 680);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
@@ -295,6 +297,23 @@ namespace YazilimMimarisi
             this.panel1.Size = new System.Drawing.Size(785, 737);
             this.panel1.TabIndex = 2;
             // 
+            // button3
+            // 
+            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button3.Location = new System.Drawing.Point(0, 624);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Name = "button3";
+            this.button3.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.button3.Size = new System.Drawing.Size(364, 56);
+            this.button3.TabIndex = 7;
+            this.button3.Text = "Hasta Oluştur";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // doctorScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
@@ -330,5 +349,6 @@ namespace YazilimMimarisi
         private System.Windows.Forms.Button btnTue;
         private System.Windows.Forms.Button btnMon;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button3;
     }
 }

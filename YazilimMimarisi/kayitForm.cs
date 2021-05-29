@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,20 +11,24 @@ using System.Windows.Forms;
 
 namespace YazilimMimarisi
 {
-    public class Hastalik:IONesneEkle
+    public partial class kayitForm : Form
     {
         SqlCommand cmd;
+        SqlDataReader dr;
         SqlConnection con = new SqlConnection("Data Source=DESKTOP-S1IT89F\\SQLEXPRESS;Initial Catalog=DB_Diyet;Integrated Security=True");
-        public string Ad { get; set; }
-        public void nesneEkle()
-        {
 
+        public kayitForm()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
             bool hata = false;
-            cmd = new SqlCommand("exec hastalikEkle '" + this.Ad + "'", con);
+            cmd = new SqlCommand("exec doktorOlustur '" + txtAd.Text + "','" + txtSoyad.Text + "','" + txtUsername.Text + "','" + txtPassword.Text + "'", con);
             con.Open();
             try
             {
-
                 cmd.ExecuteNonQuery();
             }
             catch (Exception)
@@ -32,16 +39,10 @@ namespace YazilimMimarisi
             con.Close();
             if (hata)
             {
-                MessageBox.Show("Bir Hata Meydana Geldi");
+                MessageBox.Show("Bir Hata Meydana Geldi Lütfen Daha Sorna Tekrar Deneyiniz");
             }
             else
-                MessageBox.Show("İşlem Başarıyla Gerçekleşti Programın Güncellenmesi İçin \n" +
-                    "Programı Aç Kapa Yapabilrisiniz");
+                MessageBox.Show("Kaydınız Başarıyla Alındı \nLütfen Yoneticinin Üyeliğinizi Onaylamasını Bekleyiniz");
         }
-        public Hastalik(string ad)
-        {
-            this.Ad = ad;
-        }
-        
     }
 }
