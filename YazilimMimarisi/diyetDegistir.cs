@@ -17,7 +17,7 @@ namespace YazilimMimarisi
     {
         Hasta hasta = new Hasta();
         SqlCommand cmd;
-        SqlConnection con = new SqlConnection("Data Source=DESKTOP-S1IT89F\\SQLEXPRESS;Initial Catalog=DB_Diyet;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=LAPTOP-7M06I3FK\\SQLEXPRESS;Initial Catalog=DB_Diyet;Integrated Security=True");
 
         public diyetDegistir(Hasta hasta)
         {

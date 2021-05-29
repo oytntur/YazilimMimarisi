@@ -30,30 +30,15 @@ namespace YazilimMimarisi
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GirisEkran));
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnLogin = new Bunifu.Framework.UI.BunifuThinButton2();
             this.txtBoxPass = new Bunifu.Framework.UI.BunifuTextbox();
             this.txtBoxUsername = new Bunifu.Framework.UI.BunifuTextbox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuImageButton1.Enabled = false;
-            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(252, 48);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(214, 142);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 18;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
             // 
             // btnLogin
             // 
@@ -88,7 +73,7 @@ namespace YazilimMimarisi
             this.txtBoxPass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.txtBoxPass.ForeColor = System.Drawing.Color.SeaGreen;
             this.txtBoxPass.Icon = ((System.Drawing.Image)(resources.GetObject("txtBoxPass.Icon")));
-            this.txtBoxPass.Location = new System.Drawing.Point(284, 297);
+            this.txtBoxPass.Location = new System.Drawing.Point(241, 329);
             this.txtBoxPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBoxPass.Name = "txtBoxPass";
             this.txtBoxPass.Size = new System.Drawing.Size(253, 52);
@@ -102,7 +87,7 @@ namespace YazilimMimarisi
             this.txtBoxUsername.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.txtBoxUsername.ForeColor = System.Drawing.Color.SeaGreen;
             this.txtBoxUsername.Icon = ((System.Drawing.Image)(resources.GetObject("txtBoxUsername.Icon")));
-            this.txtBoxUsername.Location = new System.Drawing.Point(284, 237);
+            this.txtBoxUsername.Location = new System.Drawing.Point(241, 269);
             this.txtBoxUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBoxUsername.Name = "txtBoxUsername";
             this.txtBoxUsername.Size = new System.Drawing.Size(253, 52);
@@ -112,9 +97,9 @@ namespace YazilimMimarisi
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(165, 310);
+            this.label2.Location = new System.Drawing.Point(98, 340);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(70, 25);
             this.label2.TabIndex = 15;
@@ -123,9 +108,9 @@ namespace YazilimMimarisi
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(131, 250);
+            this.label1.Location = new System.Drawing.Point(63, 282);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(145, 25);
             this.label1.TabIndex = 14;
@@ -149,21 +134,34 @@ namespace YazilimMimarisi
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(570, 566);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(457, 508);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(181, 41);
+            this.bunifuThinButton21.Size = new System.Drawing.Size(221, 41);
             this.bunifuThinButton21.TabIndex = 19;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::YazilimMimarisi.Properties.Resources.key;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(221, 31);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(273, 196);
+            this.pictureBox1.TabIndex = 20;
+            this.pictureBox1.TabStop = false;
             // 
             // GirisEkran
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(842, 690);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = global::YazilimMimarisi.Properties.Resources.gradient_black_blue_linear_960x1280_c2_000000_00ced1_a_15_f_14;
+            this.ClientSize = new System.Drawing.Size(705, 573);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.bunifuThinButton21);
-            this.Controls.Add(this.bunifuImageButton1);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtBoxPass);
             this.Controls.Add(this.txtBoxUsername);
@@ -171,21 +169,20 @@ namespace YazilimMimarisi
             this.Controls.Add(this.label1);
             this.Name = "GirisEkran";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private Bunifu.Framework.UI.BunifuThinButton2 btnLogin;
         private Bunifu.Framework.UI.BunifuTextbox txtBoxPass;
         private Bunifu.Framework.UI.BunifuTextbox txtBoxUsername;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

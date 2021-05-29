@@ -15,7 +15,7 @@ namespace YazilimMimarisi
     {
         SqlCommand cmd;
         SqlDataReader dr;
-        SqlConnection con = new SqlConnection("Data Source=DESKTOP-S1IT89F\\SQLEXPRESS;Initial Catalog=DB_Diyet;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=LAPTOP-7M06I3FK\\SQLEXPRESS;Initial Catalog=DB_Diyet;Integrated Security=True");
 
         public kayitForm()
         {
@@ -44,5 +44,7 @@ namespace YazilimMimarisi
             else
                 MessageBox.Show("Kaydınız Başarıyla Alındı \nLütfen Yoneticinin Üyeliğinizi Onaylamasını Bekleyiniz");
         }
+
+       
     }
 }
