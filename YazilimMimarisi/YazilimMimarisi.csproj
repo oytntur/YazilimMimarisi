@@ -66,12 +66,18 @@
     <Compile Include="adminEkran.Designer.cs">
       <DependentUpon>adminEkran.cs</DependentUpon>
     </Compile>
-    <Compile Include="Diyet.cs" />
+    <Compile Include="Classlar\Diyet.cs" />
     <Compile Include="diyetAd.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="diyetAd.Designer.cs">
       <DependentUpon>diyetAd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="diyetDegistir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="diyetDegistir.Designer.cs">
+      <DependentUpon>diyetDegistir.cs</DependentUpon>
     </Compile>
     <Compile Include="diyetForm.cs">
       <SubType>Form</SubType>
@@ -91,34 +97,49 @@
     <Compile Include="doctorScreen.Designer.cs">
       <DependentUpon>doctorScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="eklemeFactory.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Classlar\eklemeFactory.cs" />
+    <Compile Include="GirisEkran.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="GirisEkran.Designer.cs">
+      <DependentUpon>GirisEkran.cs</DependentUpon>
     </Compile>
-    <Compile Include="Hasta.cs" />
-    <Compile Include="Hastalik.cs" />
+    <Compile Include="Classlar\Hasta.cs" />
+    <Compile Include="HastalarScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HastalarScreen.Designer.cs">
+      <DependentUpon>HastalarScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classlar\Hastalik.cs" />
     <Compile Include="hastalikEkle.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="hastalikEkle.Designer.cs">
       <DependentUpon>hastalikEkle.cs</DependentUpon>
     </Compile>
-    <Compile Include="htmlLogger.cs" />
-    <Compile Include="ILogger.cs" />
-    <Compile Include="IONesneEkle.cs" />
-    <Compile Include="jsonLogger.cs" />
-    <Compile Include="LoggerAdapter.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Classlar\htmlLogger.cs" />
+    <Compile Include="Classlar\ILogger.cs" />
+    <Compile Include="Classlar\IONesneEkle.cs" />
+    <Compile Include="Classlar\jsonLogger.cs" />
+    <Compile Include="Classlar\LoggerAdapter.cs" />
+    <Compile Include="Classlar\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Rapor.cs" />
+    <Compile Include="Classlar\Rapor.cs" />
+    <Compile Include="raporForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="raporForm.Designer.cs">
+      <DependentUpon>raporForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="adminEkran.resx">
       <DependentUpon>adminEkran.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="diyetAd.resx">
       <DependentUpon>diyetAd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="diyetDegistir.resx">
+      <DependentUpon>diyetDegistir.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="diyetForm.resx">
       <DependentUpon>diyetForm.cs</DependentUpon>
@@ -129,8 +150,11 @@
     <EmbeddedResource Include="doctorScreen.resx">
       <DependentUpon>doctorScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="GirisEkran.resx">
+      <DependentUpon>GirisEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastalarScreen.resx">
+      <DependentUpon>HastalarScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="hastalikEkle.resx">
       <DependentUpon>hastalikEkle.cs</DependentUpon>
@@ -144,6 +168,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="raporForm.resx">
+      <DependentUpon>raporForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -9,20 +9,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json;//Json Okuma Yazdırma Paketi
-using HtmlAgilityPack;//Html Olarak Yazdırmak için paket
 
 namespace YazilimMimarisi
 {
     public partial class diyetForm : Form
     {
         private Form activeForm = null;
-        private int diyetID=0;
+        private Hasta secilihasta = new Hasta();
         private Diyet seciliDiyet=new Diyet();
-        public diyetForm(int diyetID)
+        public diyetForm(Hasta hasta)
         {
             InitializeComponent();
             customizeDesing();
-            this.diyetID = diyetID;
+            this.secilihasta = hasta;
+            this.Text = hasta.AdSoyad;
         }
         private void customizeDesing()
         {
@@ -56,11 +56,12 @@ namespace YazilimMimarisi
             List<Diyet> liste = LoadJson();
             foreach (Diyet item in liste)
             {
-                if (item.ID == diyetID)
+                if (item.name == secilihasta.DiyetAD)
                 {
                     seciliDiyet = item;
                 }
             }
+           
 
         }
         List<Diyet> LoadJson()
@@ -137,12 +138,17 @@ namespace YazilimMimarisi
 
         private void btnRapor_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new raporForm(secilihasta, seciliDiyet));
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnChangeDiet_Click(object sender, EventArgs e)
+        {
+            openChildForm(new diyetDegistir(secilihasta));
         }
     }
 }

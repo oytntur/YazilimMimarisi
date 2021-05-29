@@ -276,6 +276,7 @@ namespace YazilimMimarisi
             this.btnHastalar.Text = "Hastalar";
             this.btnHastalar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHastalar.UseVisualStyleBackColor = true;
+            this.btnHastalar.Click += new System.EventHandler(this.btnHastalar_Click);
             // 
             // panelLogo
             // 
@@ -305,7 +306,6 @@ namespace YazilimMimarisi
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "doctorScreen";
             this.Text = "doctorScreen";
-            this.Load += new System.EventHandler(this.doctorScreen_Load);
             this.panelSideMenu.ResumeLayout(false);
             this.diyetaddSubPanel.ResumeLayout(false);
             this.ResumeLayout(false);

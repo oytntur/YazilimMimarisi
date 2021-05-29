@@ -1,7 +1,7 @@
 ﻿
 namespace YazilimMimarisi
 {
-    partial class Form1
+    partial class GirisEkran
     {
         /// <summary>
         ///Gerekli tasarımcı değişkeni.
@@ -29,7 +29,7 @@ namespace YazilimMimarisi
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GirisEkran));
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnLogin = new Bunifu.Framework.UI.BunifuThinButton2();
             this.txtBoxPass = new Bunifu.Framework.UI.BunifuTextbox();

@@ -12,13 +12,13 @@ using System.Data.SqlClient;
 namespace YazilimMimarisi
 {
 
-    public partial class Form1 : Form
+    public partial class GirisEkran : Form
     {
         SqlCommand cmd;
         SqlDataReader dr;
         SqlConnection con = new SqlConnection("Data Source=DESKTOP-S1IT89F\\SQLEXPRESS;Initial Catalog=DB_Diyet;Integrated Security=True");
 
-        public Form1()
+        public GirisEkran()
         {
             InitializeComponent();
         }
@@ -34,9 +34,9 @@ namespace YazilimMimarisi
                 {
                     MessageBox.Show(dr["userAd"].ToString() + " " + dr["userSoyad"].ToString()
                     + "\nHoşgeldiniz", "Giriş Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    //kullaniciEkran kullaniciEkran = new kullaniciEkran(Convert.ToInt32(dr["userID"]));
-                    //kullaniciEkran.Show();
-                    //this.Hide();
+                    doctorScreen doctorScreen = new doctorScreen();
+                    doctorScreen.Show();
+                    this.Hide();
                 }
                 else if (Convert.ToInt32(dr["yetkiID"]) == 1)
                 {

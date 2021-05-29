@@ -183,37 +183,9 @@ namespace YazilimMimarisi
             openChildForm(new hastalikEkle());
         }
 
-        private void doctorScreen_Load(object sender, EventArgs e)
+        private void btnHastalar_Click(object sender, EventArgs e)
         {
-            Day day = new Day();
-            day.kahvalti = "test";
-            day.Oglen = "test1";
-            day.Aksam = "test2";
-            Diyet diyet3 = new Diyet();
-            diyet3.Pazartesi = day;
-            diyet3.Sali = day;
-            diyet3.Carsamba = day;
-            diyet3.Persembe = day;
-            diyet3.Cuma = day;
-            diyet3.Cumartesi = day;
-            diyet3.Pazar = day;
-            Hasta hasta = new Hasta();
-            hasta.Adres = "balikesir edremit";
-            hasta.AdSoyad = "Oytun Tur";
-            hasta.BirthDay = new DateTime(2008, 5, 1);
-            hasta.HastalikAd = "Şeker";
-            hasta.ID = 7;
-            hasta.TC = "12345678900";
-            hasta.Tel = "05327236563";
-            Rapor rapor = new Rapor();
-            rapor.Diyet = diyet3;
-            rapor.Hasta = hasta;
-            rapor.Sira = 1;
-            jsonLogger jsonLogger = new jsonLogger();
-            jsonLogger.LogAt(rapor);
-            LoggerAdapter loggerAdapter = new LoggerAdapter();
-            loggerAdapter.LogAt(rapor);
-
+            openChildForm(new HastalarScreen());
         }
     }
 }

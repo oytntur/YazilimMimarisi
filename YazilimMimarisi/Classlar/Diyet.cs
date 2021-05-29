@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using Newtonsoft.Json;
 
 namespace YazilimMimarisi
@@ -41,6 +42,7 @@ namespace YazilimMimarisi
             liste.Add(this);
             string strResultJson = JsonConvert.SerializeObject(liste);
             File.WriteAllText(@"test.json", strResultJson);
+            MessageBox.Show(this.name + " Diyeti Başarıyla Eklendi");
         }
     }
     
