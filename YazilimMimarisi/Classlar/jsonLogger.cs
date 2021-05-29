@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace YazilimMimarisi
 {
-    class jsonLogger : ILogger
+    class jsonLogger 
     {
         public void LogAt(Rapor rapor)
         {

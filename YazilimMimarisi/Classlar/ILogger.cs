@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace YazilimMimarisi
 {
-    public interface ILogger
+    public interface IRapor
     {
         void LogAt(Rapor rapor);
     }

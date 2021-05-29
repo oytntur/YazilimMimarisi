@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace YazilimMimarisi
 {
-    class LoggerAdapter : ILogger
+    class RaporAdapter : IRapor
     {
         private htmlLogger htmlLogger;
         public void LogAt(Rapor rapor)

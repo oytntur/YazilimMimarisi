@@ -21,7 +21,7 @@ namespace YazilimMimarisi
             rapor.Diyet = diyet;
 
         }
-        LoggerAdapter loggerAdapter = new LoggerAdapter();
+        RaporAdapter loggerAdapter = new RaporAdapter();
         jsonLogger jsonLogger = new jsonLogger();
 
         private void button1_Click(object sender, EventArgs e)

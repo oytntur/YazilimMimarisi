@@ -37,7 +37,7 @@ namespace YazilimMimarisi
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(280, 318);
+            this.button1.Location = new System.Drawing.Point(312, 320);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(143, 46);
             this.button1.TabIndex = 0;
@@ -53,7 +53,7 @@ namespace YazilimMimarisi
             "Diyet Bilgileri"});
             this.comboBox1.Location = new System.Drawing.Point(373, 194);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(266, 24);
+            this.comboBox1.Size = new System.Drawing.Size(281, 24);
             this.comboBox1.TabIndex = 1;
             // 
             // label1
