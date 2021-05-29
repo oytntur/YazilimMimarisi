@@ -305,6 +305,7 @@ namespace YazilimMimarisi
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "doctorScreen";
             this.Text = "doctorScreen";
+            this.Load += new System.EventHandler(this.doctorScreen_Load);
             this.panelSideMenu.ResumeLayout(false);
             this.diyetaddSubPanel.ResumeLayout(false);
             this.ResumeLayout(false);

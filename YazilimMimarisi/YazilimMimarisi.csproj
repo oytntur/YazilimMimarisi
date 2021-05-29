@@ -98,6 +98,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Hasta.cs" />
     <Compile Include="Hastalik.cs" />
     <Compile Include="hastalikEkle.cs">
       <SubType>Form</SubType>
@@ -105,9 +106,14 @@
     <Compile Include="hastalikEkle.Designer.cs">
       <DependentUpon>hastalikEkle.cs</DependentUpon>
     </Compile>
+    <Compile Include="htmlLogger.cs" />
+    <Compile Include="ILogger.cs" />
     <Compile Include="IONesneEkle.cs" />
+    <Compile Include="jsonLogger.cs" />
+    <Compile Include="LoggerAdapter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rapor.cs" />
     <EmbeddedResource Include="adminEkran.resx">
       <DependentUpon>adminEkran.cs</DependentUpon>
     </EmbeddedResource>
