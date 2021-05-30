@@ -212,5 +212,17 @@
   <ItemGroup>
     <None Include="Resources\gradient-black-blue-linear-960x1280-c2-000000-00ced1-a-15-f-14.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Health-Sign-blue-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-for-health-8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heartbeat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heartbeat %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

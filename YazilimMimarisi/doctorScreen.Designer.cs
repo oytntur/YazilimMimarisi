@@ -31,6 +31,7 @@ namespace YazilimMimarisi
         {
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.diyetaddSubPanel = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.btnSun = new System.Windows.Forms.Button();
@@ -43,9 +44,8 @@ namespace YazilimMimarisi
             this.btnChangeDiet = new System.Windows.Forms.Button();
             this.btnAddHastalik = new System.Windows.Forms.Button();
             this.btnHastalar = new System.Windows.Forms.Button();
-            this.panelLogo = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.panelLogo = new System.Windows.Forms.Panel();
             this.panelSideMenu.SuspendLayout();
             this.diyetaddSubPanel.SuspendLayout();
             this.SuspendLayout();
@@ -83,6 +83,23 @@ namespace YazilimMimarisi
             this.button1.Text = "Çıkış";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button3.Location = new System.Drawing.Point(0, 624);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Name = "button3";
+            this.button3.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.button3.Size = new System.Drawing.Size(364, 56);
+            this.button3.TabIndex = 7;
+            this.button3.Text = "Hasta Oluştur";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // diyetaddSubPanel
             // 
@@ -280,15 +297,6 @@ namespace YazilimMimarisi
             this.btnHastalar.UseVisualStyleBackColor = true;
             this.btnHastalar.Click += new System.EventHandler(this.btnHastalar_Click);
             // 
-            // panelLogo
-            // 
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Margin = new System.Windows.Forms.Padding(4);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(364, 125);
-            this.panelLogo.TabIndex = 0;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
@@ -297,22 +305,16 @@ namespace YazilimMimarisi
             this.panel1.Size = new System.Drawing.Size(785, 737);
             this.panel1.TabIndex = 2;
             // 
-            // button3
+            // panelLogo
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(0, 624);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(364, 56);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Hasta Oluştur";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.panelLogo.BackgroundImage = global::YazilimMimarisi.Properties.Resources.heartbeat__1_;
+            this.panelLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Margin = new System.Windows.Forms.Padding(4);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(364, 125);
+            this.panelLogo.TabIndex = 0;
             // 
             // doctorScreen
             // 

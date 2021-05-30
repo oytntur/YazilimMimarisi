@@ -56,9 +56,9 @@ namespace YazilimMimarisi
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button1.Location = new System.Drawing.Point(321, 93);
+            this.button1.Location = new System.Drawing.Point(338, 108);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 43);
+            this.button1.Size = new System.Drawing.Size(126, 43);
             this.button1.TabIndex = 2;
             this.button1.Text = "Kaydet";
             this.button1.UseVisualStyleBackColor = true;
@@ -68,8 +68,8 @@ namespace YazilimMimarisi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.ClientSize = new System.Drawing.Size(478, 161);
+            this.BackColor = System.Drawing.Color.DarkCyan;
+            this.ClientSize = new System.Drawing.Size(510, 185);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
