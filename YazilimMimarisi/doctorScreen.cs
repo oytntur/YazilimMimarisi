@@ -192,5 +192,7 @@ namespace YazilimMimarisi
         {
             openChildForm(new hastaEkle());
         }
+
+       
     }
 }

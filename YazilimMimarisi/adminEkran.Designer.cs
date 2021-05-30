@@ -39,10 +39,11 @@ namespace YazilimMimarisi
             this.transListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.ID,
             this.urunAd});
+            this.transListView.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.transListView.HideSelection = false;
-            this.transListView.Location = new System.Drawing.Point(12, 12);
+            this.transListView.Location = new System.Drawing.Point(22, 27);
             this.transListView.Name = "transListView";
-            this.transListView.Size = new System.Drawing.Size(401, 363);
+            this.transListView.Size = new System.Drawing.Size(838, 593);
             this.transListView.TabIndex = 2;
             this.transListView.UseCompatibleStateImageBehavior = false;
             this.transListView.View = System.Windows.Forms.View.Details;
@@ -51,16 +52,18 @@ namespace YazilimMimarisi
             // ID
             // 
             this.ID.Text = "ID";
+            this.ID.Width = 100;
             // 
             // urunAd
             // 
             this.urunAd.Text = "Diyetisyen Adı";
-            this.urunAd.Width = 130;
+            this.urunAd.Width = 450;
             // 
             // adminEkran
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.ClientSize = new System.Drawing.Size(891, 655);
             this.Controls.Add(this.transListView);
             this.Name = "adminEkran";

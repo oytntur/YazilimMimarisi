@@ -52,9 +52,9 @@ namespace YazilimMimarisi
             this.columnHeader7,
             this.columnHeader8});
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(42, 114);
+            this.listView1.Location = new System.Drawing.Point(30, 112);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(690, 433);
+            this.listView1.Size = new System.Drawing.Size(709, 513);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;

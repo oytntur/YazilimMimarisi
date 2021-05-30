@@ -30,7 +30,7 @@ namespace YazilimMimarisi
         private void InitializeComponent()
         {
             this.panelSideMenu = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.diyetaddSubPanel = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
@@ -44,8 +44,8 @@ namespace YazilimMimarisi
             this.btnChangeDiet = new System.Windows.Forms.Button();
             this.btnAddHastalik = new System.Windows.Forms.Button();
             this.btnHastalar = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panelSideMenu.SuspendLayout();
             this.diyetaddSubPanel.SuspendLayout();
             this.SuspendLayout();
@@ -54,7 +54,7 @@ namespace YazilimMimarisi
             // 
             this.panelSideMenu.AutoScroll = true;
             this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.panelSideMenu.Controls.Add(this.button1);
+            this.panelSideMenu.Controls.Add(this.button4);
             this.panelSideMenu.Controls.Add(this.button3);
             this.panelSideMenu.Controls.Add(this.diyetaddSubPanel);
             this.panelSideMenu.Controls.Add(this.btnChangeDiet);
@@ -65,24 +65,25 @@ namespace YazilimMimarisi
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSideMenu.Margin = new System.Windows.Forms.Padding(4);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(364, 737);
+            this.panelSideMenu.Size = new System.Drawing.Size(364, 793);
             this.panelSideMenu.TabIndex = 1;
             // 
-            // button1
+            // button4
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(0, 680);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(364, 56);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Çıkış";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = true;
+            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button4.Location = new System.Drawing.Point(0, 680);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
+            this.button4.Name = "button4";
+            this.button4.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.button4.Size = new System.Drawing.Size(364, 56);
+            this.button4.TabIndex = 8;
+            this.button4.Text = "Çıkış";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.UseVisualStyleBackColor = true;
+            
             // 
             // button3
             // 
@@ -297,14 +298,6 @@ namespace YazilimMimarisi
             this.btnHastalar.UseVisualStyleBackColor = true;
             this.btnHastalar.Click += new System.EventHandler(this.btnHastalar_Click);
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.panel1.Location = new System.Drawing.Point(363, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(785, 737);
-            this.panel1.TabIndex = 2;
-            // 
             // panelLogo
             // 
             this.panelLogo.BackgroundImage = global::YazilimMimarisi.Properties.Resources.heartbeat__1_;
@@ -316,11 +309,19 @@ namespace YazilimMimarisi
             this.panelLogo.Size = new System.Drawing.Size(364, 125);
             this.panelLogo.TabIndex = 0;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.panel1.Location = new System.Drawing.Point(363, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(807, 793);
+            this.panel1.TabIndex = 2;
+            // 
             // doctorScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1148, 737);
+            this.ClientSize = new System.Drawing.Size(1169, 793);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelSideMenu);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -340,7 +341,6 @@ namespace YazilimMimarisi
         private System.Windows.Forms.Button btnAddHastalik;
         private System.Windows.Forms.Button btnHastalar;
         private System.Windows.Forms.Panel panelLogo;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel diyetaddSubPanel;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnSun;
@@ -352,5 +352,6 @@ namespace YazilimMimarisi
         private System.Windows.Forms.Button btnMon;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }

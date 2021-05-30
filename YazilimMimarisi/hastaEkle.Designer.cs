@@ -29,6 +29,7 @@ namespace YazilimMimarisi
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(hastaEkle));
             this.txtAd = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtSoyad = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtTel = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -58,10 +59,10 @@ namespace YazilimMimarisi
             this.txtAd.LineIdleColor = System.Drawing.Color.Gray;
             this.txtAd.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtAd.LineThickness = 3;
-            this.txtAd.Location = new System.Drawing.Point(364, 176);
+            this.txtAd.Location = new System.Drawing.Point(329, 136);
             this.txtAd.Margin = new System.Windows.Forms.Padding(4);
             this.txtAd.Name = "txtAd";
-            this.txtAd.Size = new System.Drawing.Size(370, 44);
+            this.txtAd.Size = new System.Drawing.Size(404, 44);
             this.txtAd.TabIndex = 0;
             this.txtAd.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -77,10 +78,10 @@ namespace YazilimMimarisi
             this.txtSoyad.LineIdleColor = System.Drawing.Color.Gray;
             this.txtSoyad.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtSoyad.LineThickness = 3;
-            this.txtSoyad.Location = new System.Drawing.Point(364, 228);
+            this.txtSoyad.Location = new System.Drawing.Point(329, 188);
             this.txtSoyad.Margin = new System.Windows.Forms.Padding(4);
             this.txtSoyad.Name = "txtSoyad";
-            this.txtSoyad.Size = new System.Drawing.Size(370, 44);
+            this.txtSoyad.Size = new System.Drawing.Size(404, 44);
             this.txtSoyad.TabIndex = 1;
             this.txtSoyad.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -96,10 +97,10 @@ namespace YazilimMimarisi
             this.txtTel.LineIdleColor = System.Drawing.Color.Gray;
             this.txtTel.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtTel.LineThickness = 3;
-            this.txtTel.Location = new System.Drawing.Point(364, 280);
+            this.txtTel.Location = new System.Drawing.Point(329, 240);
             this.txtTel.Margin = new System.Windows.Forms.Padding(4);
             this.txtTel.Name = "txtTel";
-            this.txtTel.Size = new System.Drawing.Size(370, 44);
+            this.txtTel.Size = new System.Drawing.Size(404, 44);
             this.txtTel.TabIndex = 2;
             this.txtTel.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -115,10 +116,10 @@ namespace YazilimMimarisi
             this.txtAdres.LineIdleColor = System.Drawing.Color.Gray;
             this.txtAdres.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtAdres.LineThickness = 3;
-            this.txtAdres.Location = new System.Drawing.Point(364, 332);
+            this.txtAdres.Location = new System.Drawing.Point(329, 292);
             this.txtAdres.Margin = new System.Windows.Forms.Padding(4);
             this.txtAdres.Name = "txtAdres";
-            this.txtAdres.Size = new System.Drawing.Size(370, 44);
+            this.txtAdres.Size = new System.Drawing.Size(404, 44);
             this.txtAdres.TabIndex = 3;
             this.txtAdres.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -134,10 +135,10 @@ namespace YazilimMimarisi
             this.txtTC.LineIdleColor = System.Drawing.Color.Gray;
             this.txtTC.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtTC.LineThickness = 3;
-            this.txtTC.Location = new System.Drawing.Point(364, 384);
+            this.txtTC.Location = new System.Drawing.Point(329, 344);
             this.txtTC.Margin = new System.Windows.Forms.Padding(4);
             this.txtTC.Name = "txtTC";
-            this.txtTC.Size = new System.Drawing.Size(370, 44);
+            this.txtTC.Size = new System.Drawing.Size(404, 44);
             this.txtTC.TabIndex = 4;
             this.txtTC.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -145,9 +146,9 @@ namespace YazilimMimarisi
             // 
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(364, 489);
+            this.comboBox1.Location = new System.Drawing.Point(329, 449);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(370, 46);
+            this.comboBox1.Size = new System.Drawing.Size(404, 46);
             this.comboBox1.TabIndex = 6;
             // 
             // label1
@@ -155,9 +156,9 @@ namespace YazilimMimarisi
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(93, 181);
+            this.label1.Location = new System.Drawing.Point(58, 141);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 39);
+            this.label1.Size = new System.Drawing.Size(75, 38);
             this.label1.TabIndex = 7;
             this.label1.Text = "Ad :";
             // 
@@ -166,9 +167,9 @@ namespace YazilimMimarisi
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(93, 233);
+            this.label2.Location = new System.Drawing.Point(58, 193);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 39);
+            this.label2.Size = new System.Drawing.Size(128, 38);
             this.label2.TabIndex = 8;
             this.label2.Text = "Soyad :";
             // 
@@ -177,9 +178,9 @@ namespace YazilimMimarisi
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(93, 285);
+            this.label3.Location = new System.Drawing.Point(58, 245);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 39);
+            this.label3.Size = new System.Drawing.Size(80, 38);
             this.label3.TabIndex = 9;
             this.label3.Text = "Tel :";
             // 
@@ -188,9 +189,9 @@ namespace YazilimMimarisi
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(93, 337);
+            this.label4.Location = new System.Drawing.Point(58, 297);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(124, 39);
+            this.label4.Size = new System.Drawing.Size(121, 38);
             this.label4.TabIndex = 10;
             this.label4.Text = "Adres :";
             // 
@@ -199,9 +200,9 @@ namespace YazilimMimarisi
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(93, 389);
+            this.label5.Location = new System.Drawing.Point(58, 349);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(81, 39);
+            this.label5.Size = new System.Drawing.Size(79, 38);
             this.label5.TabIndex = 11;
             this.label5.Text = "TC :";
             // 
@@ -210,9 +211,9 @@ namespace YazilimMimarisi
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(93, 441);
+            this.label6.Location = new System.Drawing.Point(58, 401);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(237, 39);
+            this.label6.Size = new System.Drawing.Size(229, 38);
             this.label6.TabIndex = 12;
             this.label6.Text = "Doğum Günü :";
             // 
@@ -221,9 +222,9 @@ namespace YazilimMimarisi
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(93, 496);
+            this.label7.Location = new System.Drawing.Point(58, 456);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(167, 39);
+            this.label7.Size = new System.Drawing.Size(160, 38);
             this.label7.TabIndex = 13;
             this.label7.Text = "Hastalığı :";
             // 
@@ -235,7 +236,8 @@ namespace YazilimMimarisi
             this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
             this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.bunifuThinButton21.ButtonText = "ThinButton";
+            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
+            this.bunifuThinButton21.ButtonText = "Ekle";
             this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
@@ -244,10 +246,10 @@ namespace YazilimMimarisi
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(263, 598);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(261, 565);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(181, 41);
+            this.bunifuThinButton21.Size = new System.Drawing.Size(248, 68);
             this.bunifuThinButton21.TabIndex = 14;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
@@ -259,10 +261,10 @@ namespace YazilimMimarisi
             this.bunifuDatepicker1.ForeColor = System.Drawing.Color.White;
             this.bunifuDatepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.bunifuDatepicker1.FormatCustom = null;
-            this.bunifuDatepicker1.Location = new System.Drawing.Point(364, 438);
-            this.bunifuDatepicker1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.bunifuDatepicker1.Location = new System.Drawing.Point(329, 398);
+            this.bunifuDatepicker1.Margin = new System.Windows.Forms.Padding(6);
             this.bunifuDatepicker1.Name = "bunifuDatepicker1";
-            this.bunifuDatepicker1.Size = new System.Drawing.Size(370, 42);
+            this.bunifuDatepicker1.Size = new System.Drawing.Size(404, 42);
             this.bunifuDatepicker1.TabIndex = 5;
             this.bunifuDatepicker1.Value = new System.DateTime(2021, 5, 29, 20, 0, 19, 186);
             // 
@@ -288,7 +290,7 @@ namespace YazilimMimarisi
             this.Controls.Add(this.txtSoyad);
             this.Controls.Add(this.txtAd);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(785, 737);
             this.Name = "hastaEkle";
             this.Text = "hastaEkle";
