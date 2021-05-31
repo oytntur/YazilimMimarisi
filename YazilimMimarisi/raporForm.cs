@@ -36,6 +36,7 @@ namespace YazilimMimarisi
                 loggerAdapter.LogAt(rapor);
                 jsonLogger.LogAt(rapor);
             }
+            MessageBox.Show("Rapor Başarıyla Oluşturuldu", "Rapor", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
