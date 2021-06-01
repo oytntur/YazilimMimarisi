@@ -258,6 +258,8 @@ namespace YazilimMimarisi
             // 
             // panelLogo
             // 
+            this.panelLogo.BackgroundImage = global::YazilimMimarisi.Properties.Resources.heartbeat__1_;
+            this.panelLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
